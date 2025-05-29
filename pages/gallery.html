@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery | D.P.S Public School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <!-- <link rel="shortcut icon" type="x-icon" href="images/logo3.png"> -->
+    <link rel="shortcut icon" type="x-icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT11Nk4AmCY4qowJVO2zqVDFvXTxSlpjw1ieA&s">
+    <style>
+        .gallery-hero {
+            background-color: var(--navy-blue);
+            color: var(--soft-gray);
+            padding: 2.3rem 0;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .gallery-hero-text h1 {
+            color: var(--gold);
+            font-size: 2.5rem;
+            margin-bottom: 0;
+        }
+
+        .gallery-hero-text p {
+            font-size: 1.2rem;
+            color: var(--soft-gray);
+        }
+
+        .hero-text {
+            /* width: 100vw; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .gallery-page {
+            padding: 60px 40px;
+            background-color: var(--light-blue-bg);
+        }
+
+        .gallery-grid {
+            column-count: 3;
+            column-gap: 20px;
+            padding: 0 20px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+            display: block;
+            transition: transform 0.3s ease;
+            break-inside: avoid;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.03);
+        }
+
+        @media (max-width: 1024px) {
+            .gallery-grid {
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .gallery-grid {
+                column-count: 2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="top">
+            <div class="logo">D.P.S Public School</div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="navMid">
+            <div class="innerLogo logo">D.P.S Public School</div>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/index.html#about">About</a>
+                <a href="/pages/studentzone.html">Student Zone</a>
+                <a href="/pages/academics.html">Academics</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="/index.html#contact">Contact</a>
+            </div>
+            <button class="cta-button">Apply Now</button>
+        </div>
+    </nav>
+    <main class="scrollContent">
+        <!-- Hero Section -->
+        <section class="gallery-hero">
+            <div class="hero-text gallery-hero-text">
+                <h1>Our Gallery</h1>
+                <p>Glimpses of life at D.P.S Public School</p>
+            </div>
+        </section>
+
+        <!-- Gallery Grid -->
+        <section class="gallery-page">
+            <div class="gallery-grid">
+                <img loading="lazy"
+                    src="https://images.pexels.com/photos/8720304/pexels-photo-8720304.jpeg?auto=compress&cs=tinysrgb&h=350"
+                    alt="Students in Classroom">
+                <img src="https://images.pexels.com/photos/1700353/pexels-photo-1700353.jpeg?auto=compress&cs=tinysrgb&h=350"
+                    alt="Library Reading">
+                <img src="https://images.pexels.com/photos/5212340/pexels-photo-5212340.jpeg?auto=compress&cs=tinysrgb&h=350"
+                    alt="Group Study">
+                <img src="https://cdn.pixabay.com/photo/2025/05/11/22/13/mountains-9594042_1280.jpg"
+                    alt="Books in Library">
+                <img src="https://cdn.pixabay.com/photo/2025/03/06/17/45/duck-9451249_1280.jpg" alt="Science Lab">
+                <img src="https://cdn.pixabay.com/photo/2025/05/24/23/16/fallow-9620489_1280.jpg" alt="Computer Class">
+                <img src="https://cdn.pixabay.com/photo/2025/05/13/07/41/architecture-9596799_1280.jpg"
+                    alt="School Event">
+                <img src="https://images.pexels.com/photos/5212342/pexels-photo-5212342.jpeg?auto=compress&cs=tinysrgb&h=350"
+                    alt="Team Work">
+                <img loading="lazy"
+                    src="https://images.pexels.com/photos/922200/pexels-photo-922200.jpeg?auto=compress&cs=tinysrgb&h=350"
+                    alt="Campus Building">
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h3>D.P.S. Public School</h3>
+                    <p><strong>Address:</strong> Near NH 31, Dalsinghsarai, Samastipur, Bihar, India</p>
+                    <p><strong>Phone:</strong> +91-9876543210</p>
+                    <p><strong>Email:</strong> info@dpspublicschool.in</p>
+                </div>
+                <dov class="footer-mid">
+                    <h4>Sections</h4>
+                    <div class="con">
+                        <a href="/index.html">Home</a>
+                        <a href="/index.html#about">About</a>
+                        <a href="/pages/studentzone.html">Student Zone</a>
+                        <a href="/pages/academics.html">Academics</a>
+                        <a href="gallery.html">Gallery</a>
+                        <a href="/index.html#contact">Contact</a>
+                    </div>
+                </dov>
+                <div class="footer-right">
+                    <h4>Connect With Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com/dpspublicschool" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Made by: <a target="_blank" href="https://saurav6202.github.io/webgency/"><img
+                            src="https://saurav6202.github.io/webgency/images/logo3.png"
+                            alt="webgency logo">Webgency</a></span>
+                <span>Powered by: <a target="_blank" href="https://saurav6202.github.io/saurav.me/"><img
+                            src="https://saurav6202.github.io/saurav.me/profile2.jpg"
+                            alt="saurav image">Saurav</a></span>
+                <p>© 2025 D.P.S. Public School. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="/script.js"></script>
+</body>
+
+</html>

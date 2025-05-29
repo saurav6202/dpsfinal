@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Routine | D.P.S Public School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/table.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <!-- <link rel="shortcut icon" type="x-icon" href="images/logo3.png"> -->
+    <link rel="shortcut icon" type="x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT11Nk4AmCY4qowJVO2zqVDFvXTxSlpjw1ieA&s">
+</head>
+
+<body>
+    <nav>
+        <div class="top">
+            <div class="logo">D.P.S Public School</div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="navMid">
+            <div class="innerLogo logo">D.P.S Public School</div>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/index.html#about">About</a>
+                <a href="studentzone.html">Student Zone</a>
+                <a href="/pages/academics.html">Academics</a>
+                <a href="/pages/gallery.html">Gallery</a>
+                <a href="/index.html#contact">Contact</a>
+            </div>
+            <button class="cta-button">Apply Now</button>
+        </div>
+    </nav>
+    <main class="scrollContent">
+        <header class="routine-header">
+            <h1>📅 Class Routine</h1>
+            <p>Select your class to view the routine</p>
+        </header>
+        <div class="routine-container container">
+            <div class="dropdown">
+                <button id="dropdownBtn">Select Class <i class="fa-solid fa-angle-down"></i></button>
+                <a class="cta-button" style="text-decoration: none; margin-left: 2rem;" href="syllabus.html">View
+                    Syllabus</a>
+                <ul id="dropdownList" class="dropdown-list">
+                    <li data-class="7A">Class 7A</li>
+                    <li data-class="8A">Class 8A</li>
+                </ul>
+            </div>
+
+            <table id="routineTable">
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Period 1</th>
+                        <th>Period 2</th>
+                        <th>Period 3</th>
+                        <th>Period 4</th>
+                        <th>Period 5</th>
+                        <th>Period 6</th>
+                        <th>Period 7</th>
+                    </tr>
+                </thead>
+                <tbody id="routineBody">
+                    <tr>
+                        <td colspan="8">Select a class to view the routine</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h3>D.P.S. Public School</h3>
+                    <p><strong>Address:</strong> Near NH 31, Dalsinghsarai, Samastipur, Bihar, India</p>
+                    <p><strong>Phone:</strong> +91-9876543210</p>
+                    <p><strong>Email:</strong> info@dpspublicschool.in</p>
+                </div>
+                <dov class="footer-mid">
+                    <h4>Sections</h4>
+                    <div class="con">
+                        <a href="/index.html">Home</a>
+                        <a href="/index.html#about">About</a>
+                        <a href="studentzone.html">Student Zone</a>
+                        <a href="/pages/academics.html">Academics</a>
+                        <a href="/pages/gallery.html">Gallery</a>
+                        <a href="/index.html#contact">Contact</a>
+                    </div>
+                </dov>
+                <div class="footer-right">
+                    <h4>Connect With Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com/dpspublicschool" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Made by: <a target="_blank" href="https://saurav6202.github.io/webgency/"><img
+                            src="https://saurav6202.github.io/webgency/images/logo3.png"
+                            alt="webgency logo">Webgency</a></span>
+                <span>Powered by: <a target="_blank" href="https://saurav6202.github.io/saurav.me/"><img
+                            src="https://saurav6202.github.io/saurav.me/profile2.jpg"
+                            alt="saurav image">Saurav</a></span>
+                <p>© 2025 D.P.S. Public School. All rights reserved.</p>
+            </div>
+        </footer>
+    </main>
+    <script src="/script.js"></script>
+    <script>
+        const routineData = [
+            {
+                "7A": {
+                    "Monday": ["English", "S.st", "Hindi", "Math", "Computer", "Science", "Drawing"],
+                    "Tuesday": ["English", "S.st", "Hindi", "Math", "Computer", "Science", "Drawing"],
+                    "Wednesday": ["English", "S.st", "Hindi", "Math", "Computer", "Science", "Drawing"],
+                    "Thursday": ["English", "S.st", "Hindi", "Math", "Computer", "Science", "Drawing"],
+                    "Friday": ["English", "S.st", "Hindi", "Math", "Computer", "Science", "Drawing"],
+                    "Saturday": ["English", "S.st", "Hindi", "Math", "Computer", "Science", "Drawing"]
+                }
+            },
+            {
+                "8A": {
+                    "Tuesday": ["English", "S.st", "Hindi", "Math", "Computer", "Science", "Drawing"],
+                    "Monday": ["English", "S.st", "Hindi", "Math", "Computer", "Science", "Drawing"],
+                    "Thursday": ["English", "S.st", "Hindi", "Math", "Computer", "Science", "Drawing"],
+                    "Friday": ["English", "S.st", "Hindi", "Math", "Computer", "Science", "Drawing"],
+                    "Saturday": ["English", "S.st", "Hindi", "Math", "Computer", "Science", "Drawing"],
+                    "Wednesday": ["English", "S.st", "Hindi", "Math", "Computer", "Science", "Drawing"],
+                }
+            }
+        ];
+
+        // Convert routineData to a more usable object
+        const routineMap = routineData.reduce((acc, obj) => {
+            const className = Object.keys(obj)[0];
+            acc[className] = obj[className];
+            return acc;
+        }, {});
+
+        // DOM elements
+        const routineBody = document.getElementById("routineBody");
+        const dropdownBtn = document.getElementById("dropdownBtn");
+        const dropdownList = document.getElementById("dropdownList");
+
+        // Render the table for a selected class
+        function renderRoutine(className) {
+            const data = routineMap[className];
+            routineBody.innerHTML = "";
+
+            if (data) {
+                Object.entries(data).forEach(([day, periods]) => {
+                    const tr = document.createElement("tr");
+                    const dayTd = document.createElement("td");
+                    dayTd.textContent = day;
+                    tr.appendChild(dayTd);
+
+                    periods.forEach(subject => {
+                        const td = document.createElement("td");
+                        td.textContent = subject;
+                        tr.appendChild(td);
+                    });
+
+                    routineBody.appendChild(tr);
+                });
+            } else {
+                routineBody.innerHTML = "<tr><td colspan='8'>No data available.</td></tr>";
+            }
+        }
+        renderRoutine("7A");
+        // Handle dropdown click
+        dropdownBtn.addEventListener("click", () => {
+            dropdownList.classList.toggle("show");
+        });
+
+        dropdownList.querySelectorAll("li").forEach(item => {
+            item.addEventListener("click", () => {
+                const className = item.getAttribute("data-class");
+                dropdownBtn.innerHTML = `${item.textContent} <i class="fa-solid fa-angle-down"></i>`;
+                dropdownList.classList.remove("show");
+                renderRoutine(className);
+            });
+        });
+
+    </script>
+</body>
+
+</html>

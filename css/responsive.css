@@ -1,0 +1,105 @@
+@media (max-width: 768px) {
+    .scrollContent::-webkit-scrollbar {
+        display: none;
+    }
+
+    .scrollContent {
+        height: 100vh;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    nav {
+        padding: 0.7rem 0.9rem;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        height: 4.5rem;
+
+    }
+
+    nav .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-width: 100%;
+    }
+
+    nav .logo {
+        display: block;
+        /* width: 70rem; */
+        font-size: 2rem;
+        display: flex;
+        min-width: 80%;
+    }
+
+    nav .innerLogo {
+        display: none;
+    }
+
+    nav .fa-bars {
+        font-size: 1.4rem;
+        display: block;
+        width: 1rem;
+    }
+
+    .navMid {
+        overflow: hidden;
+        flex-direction: column;
+        min-height: 0rem;
+        background-color: var(--navy-blue);
+        transition: min-height 0.4s ease;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 10px;
+        align-items: center;
+        justify-content: center;
+        gap: 0;
+    }
+
+    .nav-links a {
+        font-size: 1.3rem;
+        padding: 0.5rem 0;
+    }
+
+    nav .cta-button {
+        margin: 1rem;
+        font-size: 1.2rem;
+    }
+    .why-choose h2{
+        font-size: 1.79rem;
+    }
+    .event-item {
+        height: 10rem;
+    }
+
+    .event-item:hover a {
+        width: 50%;
+    }
+
+    .event-item:hover {
+        height: 13rem;
+    }
+    .gallery-section h2{
+        font-size: 1.7rem;
+    }
+    .slider{
+        width: 95%;
+    }
+    .contact-form{
+        margin-top: 2rem;
+    }
+    .footer-left p{
+        margin-top: 0.5rem;
+    }
+    .footer-mid, .footer-right{
+        margin-top: 1rem;
+    }
+}

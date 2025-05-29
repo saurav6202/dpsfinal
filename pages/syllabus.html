@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Syllabus | D.P.S Public School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/table.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <!-- <link rel="shortcut icon" type="x-icon" href="images/logo3.png"> -->
+    <link rel="shortcut icon" type="x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT11Nk4AmCY4qowJVO2zqVDFvXTxSlpjw1ieA&s">
+</head>
+
+<body>
+    <nav>
+        <div class="top">
+            <div class="logo">D.P.S Public School</div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="navMid">
+            <div class="innerLogo logo">D.P.S Public School</div>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/index.html#about">About</a>
+                <a href="/pages/studentzone.html">Student Zone</a>
+                <a href="/pages/academics.html">Academics</a>
+                <a href="/pages/gallery.html">Gallery</a>
+                <a href="/index.html#contact">Contact</a>
+            </div>
+            <button class="cta-button">Apply Now</button>
+        </div>
+    </nav>
+    <div class="scrollContent">
+        <header class="routine-header">
+            <h1>📅 Class Syllabus</h1>
+            <p>Select your class to view the syllabus</p>
+        </header>
+        <div class="syllabus-container container">
+            <div class="dropdown">
+                <button id="dropdownBtn" class="selected-option">Select Class <i
+                        class="fa-solid fa-angle-down"></i></button>
+
+                <a class="cta-button" style="text-decoration: none; margin-left: 2rem;" href="routine.html">View
+                    Routine</a>
+
+                <ul id="dropdownList" class="dropdown-options dropdown-list">
+                    <li data-value="7A">Class 7A</li>
+                    <li data-value="8A">Class 8A</li>
+                </ul>
+            </div>
+
+            <!-- Syllabus table -->
+            <div class="tableCon">
+                <div id="syllabusTableContainer"></div>
+            </div>
+
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h3>D.P.S. Public School</h3>
+                    <p><strong>Address:</strong> Near NH 31, Dalsinghsarai, Samastipur, Bihar, India</p>
+                    <p><strong>Phone:</strong> +91-9876543210</p>
+                    <p><strong>Email:</strong> info@dpspublicschool.in</p>
+                </div>
+                <dov class="footer-mid">
+                    <h4>Sections</h4>
+                    <div class="con">
+                        <a href="/index.html">Home</a>
+                        <a href="/index.html#about">About</a>
+                        <a href="/pages/studentzone.html">Student Zone</a>
+                        <a href="/pages/academics.html">Academics</a>
+                        <a href="/pages/gallery.html">Gallery</a>
+                        <a href="/index.html#contact">Contact</a>
+                    </div>
+                </dov>
+                <div class="footer-right">
+                    <h4>Connect With Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com/dpspublicschool" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Made by: <a target="_blank" href="https://saurav6202.github.io/webgency/"><img
+                            src="https://saurav6202.github.io/webgency/images/logo3.png"
+                            alt="webgency logo">Webgency</a></span>
+                <span>Powered by: <a target="_blank" href="https://saurav6202.github.io/saurav.me/"><img
+                            src="https://saurav6202.github.io/saurav.me/profile2.jpg"
+                            alt="saurav image">Saurav</a></span>
+                <p>© 2025 D.P.S. Public School. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="/script.js"></script>
+    <script>
+        const syllabusData = {
+            "7A": [
+                {
+                    subject: "English",
+                    syllabus: {
+                        January: "Chapter 1",
+                        February: "Chapter 2",
+                        March: "Chapter 3",
+                        April: "Poem 1",
+                        May: "Grammar",
+                        June: "Revision",
+                        July: "Chapter 4",
+                        August: "Poem 2",
+                        September: "Grammar",
+                        October: "Chapter 5",
+                        November: "Poem 3",
+                        December: "Revision"
+                    }
+                },
+                {
+                    subject: "Math",
+                    syllabus: {
+                        January: "Ch 1, 2",
+                        February: "Ch 3",
+                        March: "Ch 4",
+                        April: "Activity",
+                        May: "Ch 5",
+                        June: "Ch 6",
+                        July: "Revision",
+                        August: "Ch 7",
+                        September: "Ch 8",
+                        October: "Ch 9",
+                        November: "Ch 10",
+                        December: "Revision"
+                    }
+                },
+                {
+                    subject: "Math",
+                    syllabus: {
+                        January: "Ch 1, 2",
+                        February: "Ch 3",
+                        March: "Ch 4",
+                        April: "Activity",
+                        May: "Ch 5",
+                        June: "Ch 6",
+                        July: "Revision",
+                        August: "Ch 7",
+                        September: "Ch 8",
+                        October: "Ch 9",
+                        November: "Ch 10",
+                        December: "Revision"
+                    }
+                },
+                {
+                    subject: "Math",
+                    syllabus: {
+                        January: "Ch 1, 2",
+                        February: "Ch 3",
+                        March: "Ch 4",
+                        April: "Activity",
+                        May: "Ch 5",
+                        June: "Ch 6",
+                        July: "Revision",
+                        August: "Ch 7",
+                        September: "Ch 8",
+                        October: "Ch 9",
+                        November: "Ch 10",
+                        December: "Revision"
+                    }
+                },
+                {
+                    subject: "Math",
+                    syllabus: {
+                        January: "Ch 1, 2",
+                        February: "Ch 3",
+                        March: "Ch 4",
+                        April: "Activity",
+                        May: "Ch 5",
+                        June: "Ch 6",
+                        July: "Revision",
+                        August: "Ch 7",
+                        September: "Ch 8",
+                        October: "Ch 9",
+                        November: "Ch 10",
+                        December: "Revision"
+                    }
+                },
+                {
+                    subject: "Math",
+                    syllabus: {
+                        January: "Ch 1, 2",
+                        February: "Ch 3",
+                        March: "Ch 4",
+                        April: "Activity",
+                        May: "Ch 5",
+                        June: "Ch 6",
+                        July: "Revision",
+                        August: "Ch 7",
+                        September: "Ch 8",
+                        October: "Ch 9",
+                        November: "Ch 10",
+                        December: "Revision"
+                    }
+                },
+                {
+                    subject: "Math",
+                    syllabus: {
+                        January: "Ch 1, 2",
+                        February: "Ch 3",
+                        March: "Ch 4",
+                        April: "Activity",
+                        May: "Ch 5",
+                        June: "Ch 6",
+                        July: "Revision",
+                        August: "Ch 7",
+                        September: "Ch 8",
+                        October: "Ch 9",
+                        November: "Ch 10",
+                        December: "Revision"
+                    }
+                },
+                {
+                    subject: "Math",
+                    syllabus: {
+                        January: "Ch 1, 2",
+                        February: "Ch 3",
+                        March: "Ch 4",
+                        April: "Activity",
+                        May: "Ch 5",
+                        June: "Ch 6",
+                        July: "Revision",
+                        August: "Ch 7",
+                        September: "Ch 8",
+                        October: "Ch 9",
+                        November: "Ch 10",
+                        December: "Revision"
+                    }
+                },
+            ],
+            "8A": [
+                {
+                    subject: "Science",
+                    syllabus: {
+                        January: "Ch 1",
+                        February: "Ch 2",
+                        March: "Experiment",
+                        April: "Ch 3",
+                        May: "Ch 4",
+                        June: "Practical",
+                        July: "Ch 5",
+                        August: "Ch 6",
+                        September: "Ch 7",
+                        October: "Test",
+                        November: "Revision",
+                        December: "Project"
+                    }
+                },
+                {
+                    subject: "Hindi",
+                    syllabus: {
+                        January: "कविता 1",
+                        February: "कविता 2",
+                        March: "कहानी 1",
+                        April: "व्याकरण",
+                        May: "लेखन",
+                        June: "Revision",
+                        July: "कविता 3",
+                        August: "कहानी 2",
+                        September: "Test",
+                        October: "कविता 4",
+                        November: "Revision",
+                        December: "Project"
+                    }
+                }
+            ]
+        };
+
+        const months = ["Subject", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+        const selectedOption = document.querySelector('.selected-option');
+        const dropdownOptions = document.querySelector('.dropdown-options');
+        const syllabusTableContainer = document.getElementById('syllabusTableContainer');
+
+        selectedOption.addEventListener('click', () => {
+            dropdownOptions.style.display = dropdownOptions.style.display === 'block' ? 'none' : 'block';
+        });
+        renderTable("7A");
+        dropdownOptions.querySelectorAll('li').forEach(option => {
+            option.addEventListener('click', () => {
+                const className = option.dataset.value;
+                selectedOption.innerHTML = `Class ${className} <i class="fa-solid fa-angle-down"></i>`;
+                dropdownOptions.style.display = 'none';
+                renderTable(className);
+            });
+        });
+
+        function renderTable(className) {
+            const data = syllabusData[className];
+            if (!data) return;
+
+            let html = '<div class="table-wrapper"><table class="syllabus-table"><thead><tr>';
+            months.forEach(month => html += `<th>${month}</th>`);
+            html += '</tr></thead><tbody>';
+
+            data.forEach(subject => {
+                html += `<tr><td>${subject.subject}</td>`;
+                months.slice(1).forEach(month => {
+                    html += `<td>${subject.syllabus[month] || '-'}</td>`;
+                });
+                html += '</tr>';
+            });
+
+            html += '</tbody></table></div>';
+            syllabusTableContainer.innerHTML = html;
+        }
+    </script>
+</body>
+
+</html>

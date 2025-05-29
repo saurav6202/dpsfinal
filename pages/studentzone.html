@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Zone | D.P.S Public School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <!-- <link rel="shortcut icon" type="x-icon" href="images/logo3.png"> -->
+    <link rel="shortcut icon" type="x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT11Nk4AmCY4qowJVO2zqVDFvXTxSlpjw1ieA&s">
+    <style>
+        .hero-zone {
+            background-color: var(--navy-blue);
+            color: var(--soft-gray);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .hero-zone h1 {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .hero-zone p {
+            font-size: 1.2rem;
+        }
+
+        .student-dashboard {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 30px;
+            padding: 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .zone-card {
+            background-color: var(--background-white);
+            border-left: 6px solid var(--gold);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(10, 38, 71, 0.1);
+            transition: 0.3s ease;
+        }
+
+        .zone-card h2 {
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+        }
+
+        .zone-card p {
+            color: var(--navy-blue);
+            margin-bottom: 15px;
+        }
+
+        .zone-card a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: var(--gold);
+            color: var(--navy-blue);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .zone-card:hover {
+            scale: 1.04;
+            box-shadow: 0 6px 25px rgba(0, 0, 0, 0.25);
+        }
+
+        .zone-card a:hover {
+            background-color: #e0a800;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="top">
+            <div class="logo">D.P.S Public School</div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="navMid">
+            <div class="innerLogo logo">D.P.S Public School</div>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/index.html#about">About</a>
+                <a href="studentzone.html">Student Zone</a>
+                <a href="/pages/academics.html">Academics</a>
+                <a href="/pages/gallery.html">Gallery</a>
+                <a href="/index.html#contact">Contact</a>
+            </div>
+            <button class="cta-button">Apply Now</button>
+        </div>
+    </nav>
+    <div class="scrollContent">
+        <header class="hero-zone">
+            <h1>Welcome to the Student Zone</h1>
+            <p>All your academic tools in one place</p>
+        </header>
+
+        <main class="student-dashboard">
+            <section class="zone-card">
+                <h2>📅 Class Routine</h2>
+                <p>Check your daily and weekly timetable for your class.</p>
+                <a href="routine.html">View Routine</a>
+            </section>
+
+            <section class="zone-card">
+                <h2>📘 Syllabus</h2>
+                <p>Download the latest syllabus by subject and term.</p>
+                <a href="syllabus.html">View Syllabus</a>
+            </section>
+
+            <section class="zone-card">
+                <h2>🧠 Quiz Practice</h2>
+                <p>Test your knowledge with subject-wise quizzes.</p>
+                <a href="#">Start Quiz</a>
+            </section>
+
+            <section class="zone-card">
+                <h2>📚 Study Materials</h2>
+                <p>Download notes, books, and learning videos for your class.</p>
+                <a href="#">Browse Materials</a>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h3>D.P.S. Public School</h3>
+                    <p><strong>Address:</strong> Near NH 31, Dalsinghsarai, Samastipur, Bihar, India</p>
+                    <p><strong>Phone:</strong> +91-9876543210</p>
+                    <p><strong>Email:</strong> info@dpspublicschool.in</p>
+                </div>
+                <dov class="footer-mid">
+                    <h4>Sections</h4>
+                    <div class="con">
+                        <a href="/index.html">Home</a>
+                        <a href="/index.html#about">About</a>
+                        <a href="studentzone.html">Student Zone</a>
+                        <a href="/pages/academics.html">Academics</a>
+                        <a href="/pages/gallery.html">Gallery</a>
+                        <a href="/index.html#contact">Contact</a>
+                    </div>
+                </dov>
+                <div class="footer-right">
+                    <h4>Connect With Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com/dpspublicschool" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Made by: <a target="_blank" href="https://saurav6202.github.io/webgency/"><img
+                            src="https://saurav6202.github.io/webgency/images/logo3.png"
+                            alt="webgency logo">Webgency</a></span>
+                <span>Powered by: <a target="_blank" href="https://saurav6202.github.io/saurav.me/"><img
+                            src="https://saurav6202.github.io/saurav.me/profile2.jpg"
+                            alt="saurav image">Saurav</a></span>
+                <p>© 2025 D.P.S. Public School. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>

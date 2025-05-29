@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academics | D.P.S Public School</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <!-- <link rel="shortcut icon" type="x-icon" href="images/logo3.png"> -->
+    <link rel="shortcut icon" type="x-icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT11Nk4AmCY4qowJVO2zqVDFvXTxSlpjw1ieA&s">
+    <style>
+        .hero-zone {
+            background-color: var(--navy-blue);
+            color: var(--soft-gray);
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .hero-zone h1 {
+            font-size: 2.5rem;
+            color: var(--gold);
+            margin-bottom: 10px;
+        }
+
+        .hero-zone p {
+            font-size: 1.2rem;
+        }
+
+        .academics-section,
+        .hostel-section {
+            max-width: 1100px;
+            margin: 30px auto;
+            padding: 1rem;
+            background-color: var(--background-white);
+            border-radius: 10px;
+            box-shadow: 0 4px 15px var(--shadow-color);
+        }
+
+        .academics-section {
+            padding-top: 0.1rem;
+        }
+
+        .academics-section h3,
+        .hostel-section h3 {
+            color: var(--dark-blue);
+            margin-top: 30px;
+            border-left: 5px solid var(--gold);
+            padding-left: 15px;
+            font-size: 1.5rem;
+        }
+
+        .academics-section p strong {
+            color: var(--navy-blue);
+        }
+
+        .vacation-lists {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 10px;
+        }
+
+        .vacation-lists ul {
+            flex: 1;
+            list-style: square inside;
+            padding: 15px;
+            background-color: var(--light-blue-bg);
+            border-left: 5px solid var(--blue);
+            border-radius: 8px;
+            min-width: 260px;
+        }
+
+        .academics-section ul,
+        .hostel-section ul {
+            margin-top: 10px;
+            padding-left: 25px;
+            color: var(--navy-blue);
+        }
+
+        .academics-section li,
+        .hostel-section li {
+            padding: 5px 0;
+        }
+
+        .note {
+            margin-top: 30px;
+            background: #fff8e1;
+            /* Light yellow - not in palette, keep as is */
+            border-left: 5px solid var(--gold);
+            padding: 15px;
+            font-style: italic;
+            color: #333;
+            /* Dark gray, keep as is */
+        }
+
+        .subsection-title {
+            font-size: 1.5rem;
+            color: var(--dark-blue);
+            margin: 25px 0 10px;
+            border-left: 5px solid var(--gold);
+            padding-left: 12px;
+        }
+
+        .hostel-timetable {
+            margin-top: 10px;
+            padding-left: 20px;
+            color: var(--navy-blue);
+        }
+
+        .hostel-timetable li {
+            list-style: disc;
+            padding: 5px 0;
+        }
+
+        .hostel-menu-table {
+            overflow-x: auto;
+            margin: 15px 0;
+        }
+
+        .hostel-menu-table table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        .hostel-menu-table th {
+            background-color: var(--navy-blue);
+            color: white;
+            /* Keep as is */
+            border: 1px solid #ccc;
+            /* Gray, keep as is */
+            padding: 10px;
+        }
+
+        .hostel-menu-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            background-color: #f9f9f9;
+            /* Off-white, keep as is */
+            color: var(--navy-blue);
+        }
+
+        .essentials-list ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 20px;
+            list-style: none;
+            padding-left: 0;
+            margin-top: 10px;
+        }
+
+        .essentials-list ul li {
+            width: calc(50% - 10px);
+            background-color: #e6f0fa;
+            padding: 8px 12px;
+            border-radius: 5px;
+            color: var(--navy-blue);
+            border-left: 4px solid var(--blue);
+        }
+
+        .essentials-list h4 {
+            font-size: 1.3rem;
+            color: var(--dark-blue);
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="top">
+            <div class="logo">D.P.S Public School</div>
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="navMid">
+            <div class="innerLogo logo">D.P.S Public School</div>
+            <div class="nav-links">
+                <a href="/index.html">Home</a>
+                <a href="/index.html#about">About</a>
+                <a href="/pages/studentzone.html">Student Zone</a>
+                <a href="academics.html">Academics</a>
+                <a href="/pages/gallery.html">Gallery</a>
+                <a href="/index.html#contact">Contact</a>
+            </div>
+            <button class="cta-button">Apply Now</button>
+        </div>
+    </nav>
+    <div class="scrollContent">
+        <header class="hero-zone">
+            <h1>Academics & Hostel</h1>
+            <p>Take a quick Academics & Hostel overview</p>
+        </header>
+
+        <section class="academics-section">
+            <div class="container">
+                <!-- <h2 class="section-title">📚 Academics & Hostel Overview</h2> -->
+
+                <h3>📅 Vacation List</h3>
+                <div class="vacation-lists">
+                    <ul>
+                        <li>New Year – 2 Days</li>
+                        <li>Makar Sankranti – 1 Day</li>
+                        <li>Maha Shivratri – 1 Day</li>
+                        <li>Holi – 3 Days</li>
+                        <li>Chhathi (Chaiti) – 1 Day</li>
+                        <li>Ram Navami – 1 Day</li>
+                        <li>Summer Vacation – 15 Days</li>
+                    </ul>
+                    <ul>
+                        <li>Raksha Bandhan – 1 Day</li>
+                        <li>Janmashtami – 1 Day</li>
+                        <li>Dussehra – 5 Days</li>
+                        <li>Diwali – 5 Days</li>
+                        <li>Chhath (Kartik) – 2 Days</li>
+                        <li>Christmas – 1 Day</li>
+                    </ul>
+                </div>
+
+                <h3>🎉 Festivals Celebrated</h3>
+                <p><strong>National Festivals:</strong></p>
+                <ul>
+                    <li>Republic Day – 26 January</li>
+                    <li>Independence Day – 15 August</li>
+                    <li>Gandhi Jayanti – 2 October</li>
+                    <li>Basant Panchami</li>
+                    <li>Buddha Purnima</li>
+                    <li>School Foundation Day</li>
+                    <li>Teacher’s Day – 5 September</li>
+                    <li>Children’s Day – 14 November</li>
+                </ul>
+
+                <h3>🎓 School Uniform</h3>
+                <ul>
+                    <li>Shirt</li>
+                    <li>Pant</li>
+                    <li>Skirt</li>
+                    <li>Sweater</li>
+                    <li>Legging</li>
+                    <li>Cap</li>
+                </ul>
+
+                <h3>🏫 School & Hostel Facilities</h3>
+                <ul>
+                    <li>Teacher-Student Ratio: 40:2 (Kinder), 40:1 (Senior)</li>
+                    <li>Music, Dance, Art & Craft, Smart Classes, Computer, Sports, Yoga</li>
+                    <li>24×7 Electricity & CCTV (School & Hostel)</li>
+                    <li>Coaching for Navodaya, Sainik, Simultala, Olympiads</li>
+                    <li>Daily Menu with Balanced Diet</li>
+                    <li>Separate Bed and Box for Hostel Students</li>
+                </ul>
+
+                <h3>📝 Regular Activities</h3>
+                <ul>
+                    <li>Monthly Test</li>
+                    <li>Educational Tours</li>
+                    <li>Quarterly Parents Meet</li>
+                </ul>
+
+                <div class="note">
+                    <strong>Note:</strong> Dear Parents/Guardians, please check the school diary daily for your child's
+                    bright future.
+                </div>
+            </div>
+        </section>
+
+        <section id="hostel" class="hostel-section">
+            <div class="container">
+                <h2 class="section-title">🏫 Hostel Facilities</h2>
+
+                <h3 class="subsection-title">⏰ Hostel Time Table</h3>
+                <ul class="hostel-timetable">
+                    <li>04:00 AM - 04:30 AM: Awakening + Go Toilet + Brush Teeth</li>
+                    <li>04:30 AM - 05:00 AM: Warm Up Exercise + Yoga</li>
+                    <li>05:00 AM - 05:15 AM: Morning Prayer</li>
+                    <li>05:15 AM - 06:30 AM: Study</li>
+                    <li>06:30 AM - 07:30 AM: Bathing Time + Ready to School</li>
+                    <li>07:30 AM - 08:15 AM: Breakfast</li>
+                    <li>08:30 AM - 02:30 PM: School Time</li>
+                    <li>02:30 PM - 03:40 PM: Lunch + Rest</li>
+                    <li>03:40 PM - 05:00 PM: Tuition</li>
+                    <li>05:00 PM - 06:00 PM: Play Time</li>
+                    <li>06:00 PM - 06:20 PM: Evening Prayer + Refreshment</li>
+                    <li>06:30 PM - 08:45 PM: Study</li>
+                    <li>08:45 PM - 09:15 PM: Dinner</li>
+                    <li>09:15 PM - 04:00 AM: Sleeping Time</li>
+                </ul>
+
+                <h3 class="subsection-title">🍱 Weekly Hostel Menu</h3>
+                <div class="hostel-menu-table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Day</th>
+                                <th>Breakfast</th>
+                                <th>Lunch</th>
+                                <th>Refreshment</th>
+                                <th>Dinner</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Repeat for each day -->
+                            <tr>
+                                <td>Sunday</td>
+                                <td>Roti + Tadka</td>
+                                <td>Roti + Green Veg</td>
+                                <td>Soya Veg</td>
+                                <td>Roti + Chicken</td>
+                            </tr>
+                            <tr>
+                                <td>Monday</td>
+                                <td>Roti + Green Veg</td>
+                                <td>Chole + Roti</td>
+                                <td>Chole Bhature</td>
+                                <td>Roti + Mixture</td>
+                            </tr>
+                            <tr>
+                                <td>Tuesday</td>
+                                <td>Roti + Tadka</td>
+                                <td>Chana Veg</td>
+                                <td>Chips + Biscuit</td>
+                                <td>Puri + Aloo</td>
+                            </tr>
+                            <tr>
+                                <td>Wednesday</td>
+                                <td>Roti + Green Veg</td>
+                                <td>Cheese Curd Kadhi</td>
+                                <td>Tea + Snacks</td>
+                                <td>Chapati + Aloo Sabzi</td>
+                            </tr>
+                            <tr>
+                                <td>Thursday</td>
+                                <td>Roti + Tadka</td>
+                                <td>Rice + Dal</td>
+                                <td>Murhi + Mixture</td>
+                                <td>Chapati + Kheer</td>
+                            </tr>
+                            <tr>
+                                <td>Friday</td>
+                                <td>Roti + Aloo Soya Veg</td>
+                                <td>Rice + Daal + Kaddu</td>
+                                <td>Samosa</td>
+                                <td>Roti + Egg Curry</td>
+                            </tr>
+                            <tr>
+                                <td>Saturday</td>
+                                <td>Roti + Green Veg</td>
+                                <td>Khichdi + Chokha + Papad</td>
+                                <td>Murhi + Mixture</td>
+                                <td>Roti + Mix Veg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="subsection-title">🎒 Hostel Essentials</h3>
+                <div class="essentials-list">
+                    <ul>
+                        <li>Bathing Soap - 2 pcs</li>
+                        <li>Washing Soap - 2 pcs</li>
+                        <li>Toothbrush - 2 pcs</li>
+                        <li>Toothpaste - 2 pcs</li>
+                        <li>Shampoo - 2 pcs</li>
+                        <li>Hair Oil - 2 pcs</li>
+                        <li>Comb - 1</li>
+                        <li>Nail Cutter - 1</li>
+                        <li>Underwear - 2 pcs</li>
+                        <li>Half Pant - 2 pcs</li>
+                        <li>Half T-Shirt - 2 pcs</li>
+                        <li>Towel - 2 pcs</li>
+                        <li>Shoe Polish - 1</li>
+                        <li>Shoe Brush - 1</li>
+                        <li>Blue Socks - 2 pairs</li>
+                        <li>Bed Sheet - 2 pcs</li>
+                        <li>Pillow - 1</li>
+                        <li>Mosquito Net - 1</li>
+                    </ul>
+                    <h4>For Winter</h4>
+                    <ul>
+                        <li>Full Sweater / Jacket - 2 pcs</li>
+                        <li>Vest - 2 pcs</li>
+                        <li>Trouser - 2 pcs</li>
+                        <li>Cap - 1</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- Footer -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h3>D.P.S. Public School</h3>
+                    <p><strong>Address:</strong> Near NH 31, Dalsinghsarai, Samastipur, Bihar, India</p>
+                    <p><strong>Phone:</strong> +91-9876543210</p>
+                    <p><strong>Email:</strong> info@dpspublicschool.in</p>
+                </div>
+                <dov class="footer-mid">
+                    <h4>Sections</h4>
+                    <div class="con">
+                        <a href="/index.html">Home</a>
+                        <a href="/index.html#about">About</a>
+                        <a href="/pages/studentzone.html">Student Zone</a>
+                        <a href="academics.html">Academics</a>
+                        <a href="/pages/gallery.html">Gallery</a>
+                        <a href="/index.html#contact">Contact</a>
+                    </div>
+                </dov>
+                <div class="footer-right">
+                    <h4>Connect With Us</h4>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com/dpspublicschool" target="_blank"><i
+                                    class="fa-brands fa-facebook-f"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i> YouTube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>Made by: <a target="_blank" href="https://saurav6202.github.io/webgency/"><img
+                            src="https://saurav6202.github.io/webgency/images/logo3.png"
+                            alt="webgency logo">Webgency</a></span>
+                <span>Powered by: <a target="_blank" href="https://saurav6202.github.io/saurav.me/"><img
+                            src="https://saurav6202.github.io/saurav.me/profile2.jpg"
+                            alt="saurav image">Saurav</a></span>
+                <p>© 2025 D.P.S. Public School. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
