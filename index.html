@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <!-- <link rel="shortcut icon" type="x-icon" href="images/logo3.png"> -->
-    <link rel="shortcut icon" type="x-icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT11Nk4AmCY4qowJVO2zqVDFvXTxSlpjw1ieA&s">
+    <link rel="shortcut icon" type="x-icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT11Nk4AmCY4qowJVO2zqVDFvXTxSlpjw1ieA&s">
 </head>
 
 <body>
@@ -188,14 +189,22 @@
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3606.3490393914894!2d85.27401690071864!3d25.326066071072873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f29791d24ade7b%3A0x91db5c4d4b14445!2sDPS%20public%20school!5e0!3m2!1sen!2sin!4v1748358937410!5m2!1sen!2sin"
                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="Your Name" required />
-                    <input type="email" placeholder="Your Email" required />
-                    <textarea placeholder="Your Message" rows="7" required></textarea>
+                <form class="contact-form" id="contactForm">
+                    <input type="text" placeholder="Your Name" name="name" required />
+                    <input type="email" placeholder="Your Email" name="email" required />
+                    <textarea placeholder="Your Message" rows="7" name="message" required></textarea>
                     <button type="submit" class="cta-button">Send Message</button>
                 </form>
             </div>
         </section>
+        <div id="successModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h3>Thank You!</h3>
+                <p>Your message submitted successfully.</p>
+                <p>We'll get back to you within 24 hours.</p>
+            </div>
+        </div>
 
         <!-- Footer -->
         <footer class="footer">
@@ -238,8 +247,9 @@
             </div>
         </footer>
     </div>
-
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script src="script.js"></script>
+
     <script>
         const sliderImg = document.querySelectorAll(".slider img");
 
@@ -267,6 +277,37 @@
             }
             slideImg();
         })
+    </script>
+    <script>
+        // Initialize EmailJS
+        emailjs.init("5w7vadvcbNbjzSjLx");
+
+        document.getElementById("contactForm").addEventListener("submit", function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm('service_jac2oja', 'template_vqgxvl8', this)
+                .then(function () {
+                    document.getElementById('successModal').style.display = 'block';
+                    document.getElementById('quoteRequestForm').reset();
+                }, function (error) {
+                    alert('Oops... ' + JSON.stringify(error));
+                });
+        });
+        // Form submission handler
+        function closeModal() {
+            document.getElementById('successModal').style.display = 'none';
+            window.location.href = "index.html";
+        }
+
+        function openQuoteForm() {
+            document.getElementById('quoteForm').style.display = 'block';
+        }
+
+        window.onclick = function (event) {
+            if (event.target == document.getElementById('successModal')) {
+                closeModal();
+            }
+        }
     </script>
 </body>
 
